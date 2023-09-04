@@ -1,0 +1,16 @@
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.home_table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+table, th,td{
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
