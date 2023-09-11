@@ -46,16 +46,16 @@ const Login = () => {
   return (
     <>
     <Navigation />
-    <Form onSubmit={handleSubmit} style={{ width: 300, margin: '6rem 25rem', padding: '15px 10px', border: '1px solid green'}}>
+    <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicUsername">
-        <Form.Label column sm='2'>Username</Form.Label>
-        <Form.Control size="sm" required value={username} type="text" placeholder="Enter Username" onChange={(e) => setUsername(e.target.value)} />
+        <Form.Label>Username</Form.Label>
+        <Form.Control required value={username} type="text" placeholder="Enter Username" onChange={(e) => setUsername(e.target.value)} />
       </Form.Group>
 
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
-        <Form.Control size="sm" required   value={password} type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+        <Form.Control required   value={password} type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
       </Form.Group>
 
       <Button variant="primary" type="submit">Login</Button>
