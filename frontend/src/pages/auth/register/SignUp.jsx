@@ -41,16 +41,16 @@ const SignUp = () => {
   return (
     <>
     <Navigation />
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} style={{ width: 300, margin: '6rem 25rem', padding: '15px 10px', border: '1px solid green'}}>
         <Form.Group className='mb-3' controlId='formBasicUsername' >
             <Form.Label>Username</Form.Label>
-            <Form.Control type="text" value={data.username} onChange={handleChange} name="username" placeholder="Enter Username" />
+            <Form.Control type="text" required value={data.username} onChange={handleChange} name="username" placeholder="Enter Username" />
         </Form.Group>
   
 
         <Form.Group className='mb-3' controlId='formBasicEmail' >
             <Form.Label>Email</Form.Label>
-            <Form.Control type="email" value={data.email} onChange={handleChange} name="email" placeholder="Enter Email" />
+            <Form.Control type="email" required value={data.email} onChange={handleChange} name="email" placeholder="Enter Email" />
         </Form.Group>
 
 
